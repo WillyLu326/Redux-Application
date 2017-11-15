@@ -28,7 +28,10 @@ const mapStateToProps = globalState => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		increment: () => dispatch({ type: Type.INCREMENT })
+		increment: () => dispatch({ type: Type.INCREMENT }),
+		decrement: () => dispatch({ type: Type.DECREMENT }),
+		add: (number) => dispatch({ type: Type.ADD, value: number }),
+		remove: (number) => dispatch({ type: Type.REMOVE, value: number })
 	}
 }
 
