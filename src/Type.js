@@ -1,4 +1,4 @@
-export class Type {
+class Type {
   static INCREMENT = 'INCREMENT';
   static DECREMENT = 'DECREMENT';
   static ADD = 'ADD';
@@ -7,3 +7,5 @@ export class Type {
   static STORE_RESULT = 'STORE_RESULT';
   static REMOVE_RESULT = 'REMOVE_RESULT';
 }
+
+export default Type;
