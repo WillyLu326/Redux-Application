@@ -11,6 +11,21 @@ const Reducer = (state = initialState, action) => {
         ...state,
         counter: state.counter + 1
       }
+    case Type.DECREMENT:
+      return {
+        ...state,
+        counter: state.counter - 1
+      }
+    case Type.ADD:
+      return {
+        ...state,
+        counter: state.counter + action.value
+      }
+    case Type.REMOVE:
+      return {
+        ...state,
+        counter: state.counter - action.value
+      }
     default:
       return state;
   }
