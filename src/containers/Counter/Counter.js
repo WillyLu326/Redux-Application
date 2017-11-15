@@ -12,9 +12,9 @@ class Counter extends Component {
 			<div>
 				<CounterOutput value={this.props.counter} />
 				<CounterControl label="Increment" clicked={this.props.increment} />
-				<CounterControl label="Decrement" clicked={() => this.counterChangedHandler('dec')} />
-				<CounterControl label="Add 5" clicked={() => this.counterChangedHandler('add', 5)} />
-				<CounterControl label="Subtract 5" clicked={() => this.counterChangedHandler('sub', 5)} />
+				<CounterControl label="Decrement" clicked={this.props.decrement} />
+				<CounterControl label="Add 5" clicked={() => this.props.add(5)} />
+				<CounterControl label="Subtract 5" clicked={() => this.props.remove(5)} />
 			</div>
 		);
 	}
